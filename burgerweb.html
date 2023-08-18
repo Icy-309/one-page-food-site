@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+      
+      body{
+            background-color: transparent;
+          margin: 0vmin;
+        }
+     nav{
+      background-color: black;
+        display: flex;
+        align-content: space-around;
+        justify-content: space-around;
+        margin: 0;
+        padding: 13px;
+        top: 0.2rem;
+        position: fixed;
+        width: 100%;
+
+     }
+     li{
+        display: inline;
+        padding: 12px;
+        align-content: space-around;
+        color: white;
+     }
+     a{
+        display: inline;
+        padding: 12px;
+        align-content: space-around;
+        color: white;
+        text-decoration: none;
+     }
+    
+     .hamburger{
+        display: none;
+     }
+     main{
+        background-color: black;
+        display: flex;
+        justify-content: space-around;
+        height: 450px;
+        position: relative;
+      
+     }
+     button{
+        padding: 3px;
+        width: 72px;
+        height: 30px;
+        border-radius: 20px;
+        color: white;
+        z-index: 0;
+        background-color:rgba(255, 166, 0, 0.89);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+        
+     }
+     .unit{
+        padding: 3px;
+        width: 85px;
+        height: 30px;
+        animation-name: cas;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            animation-duration: 3s;
+        border-radius: 20px;
+        color: white;
+        z-index: 5;
+        background-color:rgba(255, 166, 0, 0.89);
+     }
+     .font-1{
+          font-size: 45px;
+          color: rgb(255, 166, 0);
+          
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+    .bugfont{
+        font-size: 70px;
+          color: rgb(255, 166, 0);
+          font-weight: bold;
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .bugfont:hover{
+            transform: rotate(50deg);
+        }
+        .logo{
+            animation-name: cas;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            animation-duration: 3s;
+            z-index: 5;
+        }
+        .hundiv{
+           
+            display:block;
+            justify-content: center;
+            align-content: space-around;
+            transform: translateY(400%);
+            overflow-y: hidden;
+            position: absolute;
+             z-index:4;
+             text-align: center;
+            transition: 1s;
+            transition-duration: 1s;
+            transition-delay: 0s;
+            transition-property: transform;
+            clip-path: polygon(0% 0, 00% 0, 0% 0%, 0% 0%);
+        
+           
+          
+
+        }
+     
+       
+        .hundivcopy{
+
+            transform: translateY(150%) !important;
+            clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+           
+            
+           
+           
+    
+           
+        }
+        
+        .search{
+            width: 70%;
+            height: 30px;
+            border-color: rgb(255, 166, 0);
+            border-radius: 20px;
+            text-align: center;
+           
+            
+        }
+        footer{
+          
+        }
+      
+       
+        @keyframes cas {
+            30%{
+                transform: rotate(0deg);
+            }
+            60%{
+                transform: rotate(360deg);
+            }
+           
+            100%{
+                transform: rotate(0deg);
+            }
+
+        }
+        .hamburger{
+        display: none;
+     }
+     .first-cointainer{
+        display: flex;
+        justify-content: space-around;
+        
+        
+     }
+     .cointainers{
+        width: 5rem;
+     }
+     .first-image{
+        width:70px;
+        border-radius: 20%;
+     }
+     .th{
+        width: 65px;
+     }
+     .first-heading{
+        text-align: center;
+        font-family: sans-serif;
+     }
+     .first-text{
+        text-align: center;
+        font-size: 1.2rem;
+        font-family: sans-serif;
+     }
+     .chef-hat{
+        background-color:  black;
+      
+     }
+    .content{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto 
+       
+     }
+     .inner-content{
+        color: white;
+       padding:5%;
+        width: 60%;
+       font-size: 1rem;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       text-align: center;
+       align-content: center;
+       align-self: center;
+       justify-content: center;
+       display: inline-flex;
+     }
+     .inner-image{
+        width: 25rem;
+     }
+     .three-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: space-around;
+        gap: 1rem;
+     }
+     .inner-three-div{
+        width:20rem;
+        border: 1px solid rgb(206, 206, 206);
+        height: 10rem;
+        border-radius: 1rem;
+        
+     }
+     ::-webkit-scrollbar{
+       
+         height: 50px;
+     }
+   ::-webkit-scrollbar-track{
+    background-color:rgb(255, 166, 0);
+    height: 100%;
+   }
+     ::-webkit-scrollbar-thumb{
+        background-color: black;
+       border-radius: 20px;
+        width:10px;
+     }
+     .amb{
+         animation-name: cas;
+     }
+   
+    @media screen and (max-width:1023px) and (min-width:770px) {
+        
+    
+    .first-image{
+        width: 7rem;
+        border-radius: 20%;
+     }
+     .inner-content{
+       width: 67%;
+     }
+     
+   
+    
+
+
+    }
+    @media screen and (max-width:767px){
+          .unii{
+        display: none;
+    }
+    .hee{
+           
+           clip-path: polygon(
+            60% 0, 100% 0, 100% 100%, 
+           60% 100%);
+           text-align: end;
+           padding: 2.5rem ;
+   }
+    .content{
+        display: flex;
+        justify-content: space-around;
+       flex-wrap: wrap;
+     }
+     .inner-image{
+        width: 19rem;
+     }
+
+    li{
+        display: block;
+        border-bottom: 2px solid white;
+        cursor: pointer;
+
+        
+    }
+    a{
+        text-decoration:none ;
+    }
+    .hamburger{
+        display: inline;
+     }
+        .hee{
+           
+            clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+            text-align: center;
+            padding: 50px;
+    }
+    .first-image{
+        width: 9rem;
+        border-radius: 20%;
+     }
+    ul{
+        top: 50px;
+        left: 0;
+        right: 0;
+        position:absolute;
+        text-align: center;
+        z-index: 4;
+        transition: 2s;
+        transition-delay:0s ;
+         transition-duration:1s ;
+         background-color: rgba(255, 166, 0, 0.89);
+         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+         
+    }
+    li:hover{
+    text-decoration: underline;
+    color: white;
+    }
+    .amb{
+    width: 330px;
+}
+    }
+    @media screen and (min-width:448px) and (max-width:665px){
+        .first-cointainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     
+     }
+     .hee{
+           
+           clip-path: polygon(
+            60% 0, 100% 0, 100% 100%, 
+           60% 100%);
+           text-align: end;
+           padding: 2.5rem ;
+   }
+     .inner-content{
+       width: 70%;
+    }
+    main{
+        flex-wrap: wrap;
+        height: 500px;
+    }
+    }
+    @media screen and (max-width:448px){
+    main{
+        flex-wrap: wrap;
+        height: 500px;
+    }
+    .first-cointainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    
+    }
+    .hee{
+           
+           clip-path: polygon(60% 0, 100% 0, 100% 100%, 60% 100%);
+           text-align: end;
+           padding: 20px;
+   }
+    .amb{
+        width: 15rem;
+    }
+    .font-1{
+        font-size: 2.2rem;
+    }
+    .inner-content{
+       width: 70%;
+    }
+    li{
+
+       font-weight: 20px;
+      }
+}
+@media screen and (max-width:280px){
+    .hee{
+           
+           clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+           text-align: center;
+           padding: 50px;
+   }
+      .unit{
+
+        display:none;
+  }
+      .gim{
+    display: none;
+      }
+      .amb{
+        width: 13rem;
+    }
+    .font-1{
+        font-size: 1.7rem;
+    }
+    .inner-content{
+       width: 80%;
+    }
+    .font-1{
+        font-size: 2rem;
+    }
+    .inner-image{
+        width: 13rem;
+    }
+    button{
+     
+    }
+    .heading-four{
+        font-size: 0.9rem;
+    }
+   li{
+
+    font-weight: 3rem;
+   }
+}
+    
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+         <img class="logo" src="burger.png" width="50px" alt="">
+        </div>
+        <ul>
+            <li href="#p3">Home</li>
+           <a  href="#p3"> <li >About</li></a>
+          <a  href="#p2">  <li >Our Food</li> </a>
+            <a href="#p4"><li>Food brand</li></a>
+            <img class="yo" src="cart2.png" width="20px" alt="">
+            <img class="jivy" src="search_icon.png" width="20px"  alt="SEARCH ICON">
+        </ul>
+        <script>
+           let min = document.querySelector(".hundiv");
+           let sa = document.querySelector(".jivy");
+            sa.onclick = function (){
+                let min = document.querySelector(".hundiv");
+               console.log( 2 + 3);
+               min.classList.toggle("hundivcopy")
+                
+
+                
+            }
+        </script>
+        
+        <div class="butttons">
+            <button>Log In </button>
+            <button class="unii">Sign Up</button>
+            <button class="gim">Darkmode </button>
+            <button class="unit">Light mode</button>
+            
+        </div>
+        <div class="hamburger">
+            
+            <img  src="a menu icons.png" width="40px" alt="BUG">
+          
+        </div>
+        <div class="hundiv">
+            <input class="search" placeholder="Hungry.?" type="search" name="Search" id=""><img  src="search_icon.png"  width="20px" style="display: inline;"  alt="SEARCH ICON">
+        </div>
+       
+       
+    </nav>
+   
+     <script>
+            let mee = document.querySelector(".hamburger")
+            let you = document.querySelector("ul")
+            let dark = document.querySelector(".unit")
+            let gil = document.querySelector(".gim")
+            let rus = document.querySelector("main")
+            
+            mee.onclick = function (){
+                you.classList.toggle("hee");
+            }
+                gil.onclick = function dar(){
+                let rus = document.querySelector("main");
+                let dark = document.querySelector(".unit");
+                let na =  document.querySelector("nav");
+                let carl = document.querySelector("li");
+                rus.style.backgroundColor = 'black';
+                na.style.backgroundColor = 'black';
+                dark.innerHTML = 'Light Mode';
+                carl.style.color = 'white';
+
+            }
+           
+            dark.onclick = function light(){
+                let rus = document.querySelector("main");
+                let dark = document.querySelector(".unit");
+                let na =  document.querySelector("nav");
+                let carl = document.querySelector("li");
+               
+                rus.style.backgroundColor = 'white';
+                na.style.backgroundColor = 'white';
+                dark.innerHTML = 'Dark Mode';
+                carl.style.color = 'black';
+               
+               
+              
+            }
+               
+           
+        
+           
+         
+        </script>
+    <main id="p1">  
+        <div>
+        <p class="font-1">
+            Grilled Cheese 
+            <br>
+            <span class="bugfont">Burger</span>
+        </p>
+        </div>
+        <div>
+           <img class="amb" src="burger-png-png-images-yellow-images-12.png" width="500px" alt="">
+        </div>
+    </main>
+    <footer id="p2">
+        <h1 class="first-heading">Our Food</h1>
+       <p class="first-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, aperiam.</p>
+
+       <div class="first-cointainer">
+        <div class="containers"><img  class="first-image th" src="burger.png" alt=""><h3>Chicken Rich</h3>
+        <p>Lorem ipsum dolor sit amet.</p> <h2>$240</h2></div>
+
+        <div class="containers"><img class="first-image" src="fine burger.jpeg" alt=""><h3>Chicken burger</h3>
+            <p>Lorem ipsum dolor sit amet.</p> <h2>$24
+            </h2></div>
+        <div class="containers"><img class="first-image" src="burger-png-the-eatery-steak-special-16.png" alt=""><h3>Zine burger</h3>
+            <p>Lorem ipsum dolor sit amet.</p> <h2>$34
+            </h2></div>
+       </div>
+
+
+    </footer>
+
+    <div class="chef-hat" id="p3">
+        <div class="content">
+           
+              <div style="text-align: center; display: inline;">
+                <h1 class="heading-four" style="color: white; font-size:1.4rem;font-family: sans-serif;">About Food Cloud Group</h1>
+                <p  class="inner-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, quibusdam officia? Adipisci fugiat omnis voluptate impedit, nobis id expedita eos molestiae quod repellat ipsum a deleniti sapiente dolor magnam reiciendis ex cum alias vero deserunt molestias, blanditiis consequatur. Minima quam et pariatur repudiandae quis minus tenetur corporis velit accusantium obcaecati!</p>
+            
+              </div>
+            <div><img  class="inner-image" src="burger.png" alt=""></div>
+        </div>
+    </div>
+
+    <aside id="p4">
+       <h1 class="thirdheading" >Food Brand</h1> 
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic cum sed incidunt?</p>
+       <div class="three-div">
+        <div class="inner-three-div"></div>
+        <div class="inner-three-div"></div>
+        <div class="inner-three-div"></div>
+       </div>
+
+    </aside>
+    
+</body>
+</html>
